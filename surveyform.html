@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <style>
+     body{
+        text-align:center;
+ background:url(https://i.pinimg.com/originals/d8/48/35/d8483582b20b9bde65a78dc744ef1c40.jpg);
+       }
+      
+    #title{
+    color:purple;
+    }
+    #description{ 
+        color:blue;
+    }
+   
+    </style>
+  </head>
+  <body>
+    <div><h1 id="title">Survey Form for The Best India</h1>
+    </div>
+    <div>
+      <p id="description">Thankyou for sparing your valuable time to help us improve our country</p></div>
+    <div>
+      <form id="survey-form">
+        <label id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required><br>
+        <label id="email-label">E-mail:</label>
+        <input type="email" id="email" placeholder="Enter your email" required><br>
+        <label id="number-label">Phone number:</label>
+        <input type="number" id="number" placeholder="Enter a valid phone number" min="8" max="10" required><br>
+        <label>Gender:</label>
+        <select name="gender" id="dropdown" list="gender-list">
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Not">Not to say</option>
+        </select><br>
+        <fieldset>
+        <label>Metropolitan city you like to visit:</label><br>
+          <label><input type="radio" name="Indian-city" value="Chennai"><label>Chennai</label>
+          <input type="radio" name="Indian-city" value="Delhi"><label>Delhi</label>
+          <input type="radio" name="Indian-city" value="Kolkata"><label>Kolkata</label>
+          <input type="radio" name="Indian-city" value="Mumbai"><label>Mumbai</label>
+          </fieldset><br>
+          
+          <fieldset>
+          <label>What do you love about your country:</label><br>
+          <label><input type="checkbox" value="Culture" name="Reason1">Culture</label>
+            <label><input type="checkbox" value="Integrity" name="Reason2">Integrity</label>
+            <label><input type="checkbox" value="Secular" name="Reason3">Secular</label>
+            <label><input type="checkbox" value="Democratic" name="Reason4">Democratic</label>
+          </fieldset><br>
+        <textarea id="text-area" placeholder="Enter your comments here..."></textarea><br>
+       
+        <button type="submit" id="submit">Submit</submit>  
+        
+      </form>
+    </div>
+  
