@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Product Landing Page</title>
+    <style>
+      a:link{
+        color:white;
+      }
+      a:hover{
+        color:purple;
+      } 
+      a:visited{
+        color:blue;
+      }
+      a{
+        align:top;
+        padding:0px 2px 0px 2px;
+        spacing:1px;
+      }
+      .spacing{
+        padding-right:100px;
+        padding-left:100px;
+      }
+      @media(max-width:700px){
+        body{
+          background-color:grey;
+        }
+      }
+      .flex-container{
+        display:flex;
+      }
+      h2{
+        text-decoration:underline;
+      }
+ 
+      #header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: grey;
+      }
+      footer{
+        background:black;
+        color:white;
+        text-align:right;
+      }
+
+      </style>
+  </head>
+  <body>
+    <header id="header" class="flex-container">
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu43CWjom48E1KD43AbkhKwSKrZfV2UJWtdg&usqp=CAU" width="200" height="100" id="header-img" alt="Company-logo">
+       <nav id="nav-bar" >
+      <h1><a href="#Home" class="nav-link">Home</a>
+      <a href="#video" class="nav-link">Our Products</a>
+        <a href="#AboutUs" class="nav-link">About Us</a></h1>
+    
+    </nav>
+    </header><br><br>
+    <form id="form" action="https://www.freecodecamp.org/email-submit" method="get">
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+     
+    <div id="button">
+      <input type="submit" id="submit" value="Submit form">         </input></div>
+    </form>
+      <br>
+    <div id="Home" class="spacing">
+      <div class="flex-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjdC6KmDxS2TkBEg4o1cgR63QYO0u8drdrw&usqp=CAU" alt="T-shirts">
+      <h2>Tshirts:</h2><br>
+      <h3>We provide our customers a wide range of camouflague t-shirts choices to choose their desired one's among them which they love the most.</h3><br><br></div>
+      <div class="flex-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8iUuJ5irol7nUGrVnNMgowwIuV7-j_dGRtg&usqp=CAU" alt="Tracks">
+        <h2>Tracks:</h2>
+      <h3>We provide our customers a wide range of camouflague tracks choices to choose their desired one's</h3></div>
+      <div class="flex-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJoZUoWcoPSAwsXovziLs-s0s3THdayucMgw&usqp=CAU" alt="Tracksuits">
+      <h2>Tracksuits:</h2>
+      <h3>We provide our customers a wide range of camouflague tracks choices to choose their desired one's</h3><br></div></div>
+    <div class="spacing">
+      <video id="video" autoplay src="https://www.youtube.com/embed/e_xqTXs91hE" type="video/mp4" controls></video>
+ <div id="AboutUs"><h2>About Us</h2>
+       <h3>To dream of camouflage clothing represents your personality during a time where you are trying to conceal your true feelings or intentions. You may also want to avoid standing out to other people. Experiencing conflict situations where you feel it's important to disguise your true intentions.</h3>
+     </div>
+    </div>
+  <footer>Copyright 2021,Tejaswini P R
+  </footer>
+ </body>
+</html>
